@@ -1,0 +1,295 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size:24px;
+  line-height: 1.3;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+.container{
+  max-width: 1840px;
+  padding: 0 10px;
+  margin:0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  &__top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+   &__content {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: calc(100vh - 120px);
+     position: relative;
+
+
+   }
+
+  &__images {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+      bottom: 0;
+    margin: auto;
+
+  }
+}
+
+.menu {
+
+  &__btn {
+    width: 70px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    & span {
+      background-color:#FF5017;
+      height: 3px;
+      width: 100%;
+    }
+  }
+}
+
+.title {
+  font-size: 345px;
+  background: linear-gradient(180deg, #000000 0%, #830B02 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-left: 150px;
+  line-height: 0.8;
+}
+
+.subtitle {
+  font-size: 160px;
+  background: linear-gradient(90deg, #FF5017 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  align-self: end;
+  padding-right: 75px;
+  padding-bottom: 50px;
+}
+
+.info {
+  background-color: #F8F8F8;
+  padding-block: 170px;
+
+  &__img {
+    margin:0 auto;
+    max-width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 170px;
+    padding-inline: 155px 100px;
+    gap:94px;
+  }
+  &__list {
+    column-count: 2;
+    gap:140px;
+
+    & dt, & dd {
+      display: inline-block;
+      margin-left:0;
+    }
+
+    &-line {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    text-align: center;
+    line-height: 0.8;
+    font-size:160px;
+    text-transform: uppercase;
+  }
+
+  &__galery {
+    display: flex;
+
+    gap:20px;
+
+    & img {
+      max-height: 100%;
+    }
+  }
+}
+
+.price {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.order-box {
+
+}
+
+.order {
+  padding: 30px 60px;
+  background: #FF5017;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #cd3402;
+  }
+}
+
+.color {
+  background-color: #F8F8F8;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size:160px;
+    margin-bottom: 70px;
+  }
+
+
+  &__gallery {
+    background-color: #13171C;
+
+
+    &__start, &__end {
+      width: 100%;
+    }
+  }
+}
+
+.gallery-box {
+    display: flex;
+    padding-inline: 50px;
+    padding-block:170px;
+    gap:20px;
+
+  &__item {
+    border-radius: 20px;
+  }
+
+  &__text {
+    margin-top:20px;
+    text-align: center;
+    color:white;
+    font-size:36px;
+  }
+}
+
+.footer {
+  background-color: #13171C;
+
+  &__title {
+    font-size: 36px;
+    color:#FF5017;
+    text-align:center;
+    padding-top:170px;
+  }
+
+  &__link {
+    color:#FFFFFF;
+    margin-block:110px 87px;
+    text-align:center;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-top:70px;
+  gap:40px 200px;
+  color:white;
+  padding-left: 300px;
+  padding-right: 150px;
+
+  &__title {
+    color:#BCBCBC;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__phone {
+    color:white;
+  }
+
+  &__text-rules {
+    margin-bottom: 20px;
+    margin-top:77px;
+    font-size: 14px;
+    max-width:330px;
+
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    max-width: 477px;
+  }
+
+  &__info {
+    max-width: 565px;
+  }
+  &__form {
+  }
+
+}
+
+.form {
+  flex-basis: 594px;
+
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding:10px;
+    color:white;
+    background-color: transparent;
+    text-transform: uppercase;
+    border:none;
+    border-bottom:1px solid white;
+
+
+    &::placeholder {
+      color:white;
+    }
+    &:focus {
+      outline:none;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}
