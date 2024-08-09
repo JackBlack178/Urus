@@ -217,6 +217,10 @@ button {
 .footer {
   background-color: #13171C;
 
+  &__container {
+    min-height: auto;
+  }
+
   &__title {
     font-size: 36px;
     color:#FF5017;
