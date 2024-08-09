@@ -59,7 +59,8 @@ button {
       right: 0;
       top: 50px;
       bottom: 0;
-    margin: auto;
+      margin: auto;
+      max-width: 100%;
 
   }
 }
@@ -78,6 +79,8 @@ button {
       background-color:#FF5017;
       height: 3px;
       width: 100%;
+      border:1px solid black;
+      box-sizing: content-box;
     }
   }
 }
@@ -142,7 +145,7 @@ button {
 
   &__galery {
     display: flex;
-
+    flex-wrap:wrap;
     gap:20px;
 
     & img {
@@ -207,6 +210,7 @@ button {
     text-align: center;
     color:white;
     font-size:36px;
+    text-transform: uppercase;
   }
 }
 
@@ -292,4 +296,288 @@ button {
   &__btn {
     width: 100%;
   }
+}
+
+@media (max-width: 1860px) {
+  .info__galery{
+    gap:24px 20px;
+
+    & img {
+      width: 48%;
+    }
+  }
+
+}
+
+@media (max-width: 1600px) {
+  .contacts {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 280px;
+    padding-left: 0;
+  }
+  .subtitle {
+    font-size: 140px;
+  }
+  .header__images {
+    top: 0;
+  }
+
+  .info {
+    padding-block: 100px; ;
+    &__title {
+      font-size: 90px;
+    }
+
+    &__content {
+      padding-inline: 0;
+      margin-bottom: 100px;
+      gap:20px;
+    }
+
+    &__list {
+      gap:60px
+    }
+  }
+
+  .order {
+    padding: 20px 50px;
+  }
+
+  .color {
+
+    &__title {
+      font-size: 100px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .gallery-box {
+    padding-inline: 20px;
+    padding-block: 50px;
+    gap: 12px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    &__item {
+      width: 48%;
+    }
+
+    & img {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+
+  .footer {
+
+    &__title {
+      padding-top: 100px;
+    }
+
+    &__link {
+      margin-block: 80px 60px;
+    }
+  }
+
+  .contacts {
+    padding-inline: 10px;
+    column-gap: 60px;
+  }
+
+}
+
+@media (max-width: 1040px) {
+  .info__galery img {
+    width: 100%;
+  }
+
+  .info__content {
+    margin-bottom: 50px;
+  }
+
+  .order {
+    padding: 20px 50px;
+  }
+
+  .footer{
+
+    &__title {
+      padding-top: 60px;
+    }
+
+    &__link {
+      margin-block: 50px 40px;
+    }
+  }
+
+  .contacts {
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      margin-bottom: 12px;
+      font-size: 20px;
+
+      &-rules {
+        font-size: 16px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .title {
+    font-size: 170px;
+    padding-left: 0;
+  }
+  .subtitle {
+    font-size: 90px;
+  }
+  .header__top {
+    padding-top: 25px;
+
+  }
+
+  .info {
+    padding-top: 100px;
+
+    &__title {
+      font-size: 54px;
+    }
+
+    &__list {
+      column-count: 1;
+
+      &-line {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+    }
+
+    &__content {
+      padding-inline: 0;
+      margin-bottom: 30px;
+      gap:20px;
+    }
+
+    &__list {
+      gap:60px
+    }
+  }
+
+
+  .price {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contacts {
+    display: block;
+
+  }
+
+}
+
+@media (max-width: 670px) {
+  .info {
+    padding-block: 50px;
+  }
+
+  .info__content{
+    display: block;
+    text-align: center;
+  }
+
+  .gallery-box__item {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 125px;
+  }
+  .subtitle {
+    font-size: 65px;
+    padding-right: 0;
+    //align-self: center;
+  }
+  .header__top {
+    padding-top: 10px;
+  }
+
+  .info {
+
+    &__title {
+      font-size: 44px;
+    }
+
+    &__list {
+
+      &-line {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .order {
+    padding: 15px 40px;
+  }
+
+  .color__title {
+    font-size: 32px;
+  }
+
+  .footer {
+
+    &__title {
+      padding-top: 30px;
+      font-size: 33px;
+    }
+
+    &__link {
+      margin-block: 40px 30px;
+      font-size: 25px;
+    }
+  }
+
+  .contacts {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__text {
+      font-size: 17px;
+
+      &-rules {
+        font-size: 17px;
+        margin-top: 40px
+      }
+    }
+    &__phone {
+      font-size:20px
+    }
+  }
+
+  .form {
+    &__input {
+      font-size: 20px;
+      &::placeholder {
+        font-size: 20px;
+      }
+    }
+  }
+
 }
